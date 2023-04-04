@@ -46,5 +46,10 @@ class Chronometer {
 
   split() {
     // ... your code goes here
+    let minutesSplit = this.computeTwoDigitNumber(this.getMinutes());
+    let secondsSplit = this.computeTwoDigitNumber(this.getSeconds());
+
+
+    return `${minutesSplit}:${secondsSplit}`
   }
 }
